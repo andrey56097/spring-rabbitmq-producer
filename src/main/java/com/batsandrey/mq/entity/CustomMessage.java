@@ -1,4 +1,4 @@
-package com.batsandrey.mq;
+package com.batsandrey.mq.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

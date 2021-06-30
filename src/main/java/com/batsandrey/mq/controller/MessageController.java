@@ -1,6 +1,6 @@
 package com.batsandrey.mq.controller;
 
-import com.batsandrey.mq.CustomMessage;
+import com.batsandrey.mq.entity.CustomMessage;
 import com.batsandrey.mq.config.MQConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
