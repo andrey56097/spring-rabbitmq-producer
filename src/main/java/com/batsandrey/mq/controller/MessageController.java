@@ -19,9 +19,9 @@ public class MessageController {
 
     @PostMapping("/publish")
     public String publishMessage(@RequestBody CustomMessage message) {
-        message.setMessage(UUID.randomUUID().toString());
+        message.setMessageId(UUID.randomUUID().toString());
         message.setMessageDate(new Date());
-        template.convertAndSend(MQConfig.ROUTING_KEY, message);
+        template.convertAndSend(MQConfig.EXCHANGE, MQConfig.ROUTING_KEY, message);
 
         return "Message published";
     }
